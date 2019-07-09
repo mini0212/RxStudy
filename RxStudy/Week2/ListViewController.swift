@@ -49,6 +49,25 @@ class ListViewController: UIViewController, UITableViewDelegate {
             cell.setData(element)
         }.disposed(by: disposeBag)
         
+        // 필요한 것만 리로드
+        // 11 이상
+        tableView.performBatchUpdates( {
+            tableView.insertRows(at: [], with: .automatic)
+            tableView.deleteRows(at: [], with: .automatic)
+            tableView.reloadRows(at: [], with: .automatic)
+        })
+        
+        // 11이하
+        tableView.beginUpdates()
+        
+        tableView.insertRows(at: [], with: .automatic)
+        tableView.deleteRows(at: [], with: .automatic)
+        tableView.reloadRows(at: [], with: .automatic)
+        
+        tableView.endUpdates()
+        
+        // rx에서는 rxDataSource로 변경되는 애니메이션을 주기위해? 간편하게 가능!!
+        
     }
     
     
