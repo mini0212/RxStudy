@@ -18,11 +18,13 @@ import RxCocoa
  - 배열의 object도 자유
  */
 
-class ListViewController: UIViewController {
+class ListViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     let cell: String = "ListTableViewCell"
+    
+    let arrays = Observable<[String]>.just([String](repeating: "text", count: 20))
 
     let disposeBag = DisposeBag()
     
@@ -38,8 +40,8 @@ class ListViewController: UIViewController {
     func initTableView() {
         self.tableView.register(UINib(nibName: self.cell, bundle: nil), forCellReuseIdentifier: self.cell)  // 안하면 에러남-_-;
         
-        let array = [String](repeating: "text", count: 20)  // 더미데이터 생성
-        let arrays = Observable.of(array)
+//        let array = [String](repeating: "text", count: 20)  // 더미데이터 생성
+//        let obArray = Observable.of(array)
         
         arrays
             .bind(to: self.tableView.rx.items(cellIdentifier: self.cell, cellType: ListTableViewCell.self)) { index, element, cell in
@@ -52,9 +54,11 @@ class ListViewController: UIViewController {
     
 
     func setTableViewSelect() {
-        self.tableView.rx.itemSelected.subscribe(onNext: { indexPath in
-            print("\(indexPath.row)")
-        }).disposed(by: disposeBag)
+        self.tableView.rx.setDelegate(self).disposed(by: disposeBag)
+//        .itemSelected
+//            .subscribe(onNext: { indexPath in
+//            print("\(indexPath.row)")
+//        }).disposed(by: disposeBag)
     }
     
  
