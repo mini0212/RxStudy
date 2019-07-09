@@ -86,3 +86,9 @@ class LoginViewController: UIViewController {
         
     }
 }
+
+// flatMap: 이벤트들을 관리할 수 있는?
+
+// BehaviorRelay + skip(1)을 쓸바에는 PublishRelay를 써라
+
+// distinctUtilChanged - 직전에 들어온 값과 지금 들어온 값이 다를때만 이벤트 발생
