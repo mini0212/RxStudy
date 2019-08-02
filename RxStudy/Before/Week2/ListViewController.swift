@@ -22,10 +22,8 @@ class ListViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let cell: String = "ListTableViewCell"
-    
     let arrays = Observable<[String]>.just([String](repeating: "text", count: 20))
-
+    let items = BehaviorRelay(value: [String]())
     let disposeBag = DisposeBag()
     
     
@@ -38,13 +36,23 @@ class ListViewController: UIViewController, UITableViewDelegate {
     }
 
     func initTableView() {
-        self.tableView.register(UINib(nibName: self.cell, bundle: nil), forCellReuseIdentifier: self.cell)  // 안하면 에러남-_-;
+        self.tableView.register(UINib(nibName: ListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ListTableViewCell.identifier)  // 안하면 에러남-_-;
         
 //        let array = [String](repeating: "text", count: 20)  // 더미데이터 생성
 //        let obArray = Observable.of(array)
         
-        arrays
-            .bind(to: self.tableView.rx.items(cellIdentifier: self.cell, cellType: ListTableViewCell.self)) { index, element, cell in
+        // items를 구독하는 모든 것에 값을 넣어서 observable
+        Observable<[String]>
+            .just([String](repeating: "observable", count: 20))
+            .bind(to: items)
+            .disposed(by: disposeBag)
+        
+        // accept -> 전역으로 선언된 items 에 값을 넣어줌 
+//        items.accept([String](repeating: "item", count: 20))
+        
+        // self 사용할때 escaping closure 인지 확인 후 weak self, unowned self 걸어주기
+        items
+            .bind(to: self.tableView.rx.items(cellIdentifier: ListTableViewCell.identifier, cellType: ListTableViewCell.self)) { (index, element, cell) in
                 
             cell.setData(element)
         }.disposed(by: disposeBag)
@@ -70,10 +78,13 @@ class ListViewController: UIViewController, UITableViewDelegate {
         
     }
     
-    
+    // 값을 삭제할 때 값을 바로 삭제하면 안되고 값을 삭제 하고 accept로 테이블 뷰에 값을 넣어줌
 
     func setTableViewSelect() {
-        self.tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        self.tableView.rx
+            .setDelegate(self)
+            .disposed(by: disposeBag)
+        
 //        .itemSelected
 //            .subscribe(onNext: { indexPath in
 //            print("\(indexPath.row)")

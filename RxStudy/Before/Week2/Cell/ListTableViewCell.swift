@@ -12,6 +12,8 @@ class ListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var textLbl: UILabel!
     
+    static let identifier: String = "ListTableViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
