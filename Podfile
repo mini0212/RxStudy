@@ -7,7 +7,8 @@ target 'RxStudy' do
 
 	pod "RxSwift"
 	pod "RxCocoa"
-  pod "RxDataSources"
+	pod "RxDataSources"
+	pod "ReactorKit"
   
   # Pods for RxStudy
 

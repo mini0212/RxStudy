@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        guard let vc = self.window?.rootViewController as? LoginViewController else { return false }
+        vc.reactor = LoginReactorView()
+        
+        
         return true
     }
 

@@ -20,7 +20,7 @@ import RxCocoa
  
  */
 
-class LoginViewController: UIViewController {
+class BeforeLoginViewController: UIViewController {
 
     // MARK: - IBOutlet
     @IBOutlet weak var emailTextField: UITextField!

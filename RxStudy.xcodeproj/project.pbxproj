@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,13 +17,16 @@
 		3946FBCB22E75A0B00BE70CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946FBCA22E75A0B00BE70CA /* LoginViewModel.swift */; };
 		3946FBCD22E7631100BE70CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3946FBCC22E7631100BE70CA /* ViewController.swift */; };
 		396A586A22C0DF4400E04BD1 /* NoUSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A586922C0DF4400E04BD1 /* NoUSE.swift */; };
-		398EC5D822C5E27300DEF4A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398EC5D722C5E27300DEF4A9 /* LoginViewController.swift */; };
+		398EC5D822C5E27300DEF4A9 /* BeforeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398EC5D722C5E27300DEF4A9 /* BeforeLoginViewController.swift */; };
 		398F6ACD22D08D8C00F1D033 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F6ACC22D08D8C00F1D033 /* ListViewController.swift */; };
 		398F6AEC22D3159700F1D033 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398F6AEA22D3159700F1D033 /* ListTableViewCell.swift */; };
 		398F6AED22D3159700F1D033 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398F6AEB22D3159700F1D033 /* ListTableViewCell.xib */; };
 		39C33B9E22F03421001EBC73 /* RxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C33B9D22F03421001EBC73 /* RxTableViewController.swift */; };
 		39C33BA222F035F8001EBC73 /* RxTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C33BA022F035F8001EBC73 /* RxTableTableViewCell.swift */; };
 		39C33BA322F035F8001EBC73 /* RxTableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C33BA122F035F8001EBC73 /* RxTableTableViewCell.xib */; };
+		39F52AE9230D6B1E00006901 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F52AE6230D6B1E00006901 /* Login.storyboard */; };
+		39F52AEA230D6B1E00006901 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F52AE7230D6B1E00006901 /* LoginViewController.swift */; };
+		39F52AEB230D6B1E00006901 /* LoginReactorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F52AE8230D6B1E00006901 /* LoginReactorView.swift */; };
 		8237744E0A9154C589511D15 /* Pods_RxStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1813A3BEAA503B44A867393C /* Pods_RxStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +45,16 @@
 		3946FBCA22E75A0B00BE70CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		3946FBCC22E7631100BE70CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		396A586922C0DF4400E04BD1 /* NoUSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUSE.swift; sourceTree = "<group>"; };
-		398EC5D722C5E27300DEF4A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		398EC5D722C5E27300DEF4A9 /* BeforeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeLoginViewController.swift; sourceTree = "<group>"; };
 		398F6ACC22D08D8C00F1D033 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		398F6AEA22D3159700F1D033 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		398F6AEB22D3159700F1D033 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		39C33B9D22F03421001EBC73 /* RxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewController.swift; sourceTree = "<group>"; };
 		39C33BA022F035F8001EBC73 /* RxTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableTableViewCell.swift; sourceTree = "<group>"; };
 		39C33BA122F035F8001EBC73 /* RxTableTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxTableTableViewCell.xib; sourceTree = "<group>"; };
+		39F52AE6230D6B1E00006901 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		39F52AE7230D6B1E00006901 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		39F52AE8230D6B1E00006901 /* LoginReactorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReactorView.swift; sourceTree = "<group>"; };
 		ECB3EBE5A7AC6E924B268DF9 /* Pods-RxStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxStudy.debug.xcconfig"; path = "Target Support Files/Pods-RxStudy/Pods-RxStudy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +91,7 @@
 		391A56CE229E97E000342369 /* RxStudy */ = {
 			isa = PBXGroup;
 			children = (
+				39F52AE5230D69AA00006901 /* ReactorKitStudy */,
 				391A56D3229E97E000342369 /* Main.storyboard */,
 				39C33B9F22F03426001EBC73 /* Week2 */,
 				39C33B9C22F033F7001EBC73 /* Week1 */,
@@ -127,7 +134,7 @@
 		398F6ACE22D0EAEE00F1D033 /* Week1 */ = {
 			isa = PBXGroup;
 			children = (
-				398EC5D722C5E27300DEF4A9 /* LoginViewController.swift */,
+				398EC5D722C5E27300DEF4A9 /* BeforeLoginViewController.swift */,
 			);
 			path = Week1;
 			sourceTree = "<group>";
@@ -177,6 +184,16 @@
 				39C33BA022F035F8001EBC73 /* RxTableTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		39F52AE5230D69AA00006901 /* ReactorKitStudy */ = {
+			isa = PBXGroup;
+			children = (
+				39F52AE6230D6B1E00006901 /* Login.storyboard */,
+				39F52AE7230D6B1E00006901 /* LoginViewController.swift */,
+				39F52AE8230D6B1E00006901 /* LoginReactorView.swift */,
+			);
+			path = ReactorKitStudy;
 			sourceTree = "<group>";
 		};
 		ABA8639ECA528E3A9AFED0C8 /* Pods */ = {
@@ -258,6 +275,7 @@
 			files = (
 				391A56DA229E97E100342369 /* LaunchScreen.storyboard in Resources */,
 				39C33BA322F035F8001EBC73 /* RxTableTableViewCell.xib in Resources */,
+				39F52AE9230D6B1E00006901 /* Login.storyboard in Resources */,
 				398F6AED22D3159700F1D033 /* ListTableViewCell.xib in Resources */,
 				391A56D7229E97E100342369 /* Assets.xcassets in Resources */,
 				391A56D5229E97E000342369 /* Main.storyboard in Resources */,
@@ -295,24 +313,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxStudy/Pods-RxStudy-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxStudy/Pods-RxStudy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-RxStudy/Pods-RxStudy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -326,12 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F52AEA230D6B1E00006901 /* LoginViewController.swift in Sources */,
 				3946FBCD22E7631100BE70CA /* ViewController.swift in Sources */,
-				398EC5D822C5E27300DEF4A9 /* LoginViewController.swift in Sources */,
+				398EC5D822C5E27300DEF4A9 /* BeforeLoginViewController.swift in Sources */,
 				3946FBC722E752F200BE70CA /* LoginModel.swift in Sources */,
 				396A586A22C0DF4400E04BD1 /* NoUSE.swift in Sources */,
 				3946FBC922E7549E00BE70CA /* ValidationViewModel.swift in Sources */,
 				391A56D2229E97E000342369 /* MainViewController.swift in Sources */,
+				39F52AEB230D6B1E00006901 /* LoginReactorView.swift in Sources */,
 				39C33BA222F035F8001EBC73 /* RxTableTableViewCell.swift in Sources */,
 				398F6ACD22D08D8C00F1D033 /* ListViewController.swift in Sources */,
 				391A56D0229E97E000342369 /* AppDelegate.swift in Sources */,
@@ -485,7 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 844G3G93PK;
+				DEVELOPMENT_TEAM = 6B2VQKE4D7;
 				INFOPLIST_FILE = RxStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,7 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 844G3G93PK;
+				DEVELOPMENT_TEAM = 6B2VQKE4D7;
 				INFOPLIST_FILE = RxStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="-91" y="83"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Before Login View Controller-->
         <scene sceneID="3tY-Sn-y4i">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Tui-ew-fgD" customClass="LoginViewController" customModule="RxStudy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BeforeLoginViewController" id="Tui-ew-fgD" customClass="BeforeLoginViewController" customModule="RxStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbj-l2-sYJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

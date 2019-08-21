@@ -20,9 +20,9 @@ class LoginViewModel {
     let passwordViewModel = PasswordViewModel()
     
     // Fields that bind to our view's
-    let isSuccess: Variable<Bool> = Variable(false)
-    let isLoading: Variable<Bool> = Variable(false)
-    let errorMsg: Variable<String> = Variable("")
+    let isSuccess: BehaviorRelay<Bool> = BehaviorRelay(value: false)
+    let isLoading: BehaviorRelay<Bool> = BehaviorRelay(value: false)
+    let errorMsg: BehaviorRelay<String> = BehaviorRelay(value: "")
     
     func validateCredentials() -> Bool {
         return emailIDViewModel.validateCredentials() && passwordViewModel.validateCredentials()
@@ -34,8 +34,8 @@ class LoginViewModel {
         model.email = emailIDViewModel.data.value
         model.password = passwordViewModel.data.value
         
-        self.isLoading.value = true
-        
+//        self.isLoading.value = true
+        self.isLoading.accept(true)
 //        let result = Request
     }
     
